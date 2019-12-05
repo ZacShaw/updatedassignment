@@ -1,6 +1,6 @@
 <!-- Toolbar -->
 <mat-toolbar color="primary" class="header">
-  <div>Student Records</div>
+  <div>Player Listings</div>
   <span class="nav-tool-items">
     <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
   </span>
@@ -12,10 +12,13 @@
     [fixedTopGap]>
     <mat-nav-list>
       <a mat-list-item routerLinkActive="active" routerLink="/add-student">
-        <mat-icon>add</mat-icon> Add Student
+        <mat-icon>add</mat-icon> Add Students
       </a>
       <a mat-list-item routerLinkActive="active" routerLink="/students-list">
-        <mat-icon>format_list_bulleted</mat-icon> View Students
+        <mat-icon>format_list_bulleted</mat-icon> Student Listing
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/login">
+        <mat-icon>build</mat-icon> Login
       </a>
     </mat-nav-list>
   </mat-sidenav>
